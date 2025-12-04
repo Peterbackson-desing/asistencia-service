@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.idgs12.asistencia.asistencia.dto.GrupoDTO;
 
-@FeignClient(name = "grupos", url = "http://grupos:8086")
+@FeignClient(name = "grupos", url = "https://grupos-repository-production.up.railway.app")
 public interface GrupoFeignClient {
 
     @GetMapping("/grupos/usuario/{usuarioId}")

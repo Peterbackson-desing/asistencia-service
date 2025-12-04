@@ -8,7 +8,7 @@ import com.idgs12.asistencia.asistencia.dto.HorarioDTO;
 
 import java.util.List;
 
-@FeignClient(name = "horarios", url = "http://horario:8087")
+@FeignClient(name = "horarios", url = "https://horario-repository-production.up.railway.app")
 public interface HorarioFeignClient {
 
     @GetMapping("/horarios/grupo/{grupoId}")

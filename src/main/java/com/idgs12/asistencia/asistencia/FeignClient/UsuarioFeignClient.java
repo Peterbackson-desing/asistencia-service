@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.idgs12.asistencia.asistencia.dto.UsuarioDTO;
 
-@FeignClient(name = "usuarios", url = "http://usuarios:8084")
+@FeignClient(name = "usuarios", url = "https://usuarios-repository-production.up.railway.app")
 public interface UsuarioFeignClient {
 
     @GetMapping("/usuarios/matricula/{matricula}")
